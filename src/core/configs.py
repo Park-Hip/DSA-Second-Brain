@@ -16,8 +16,10 @@ class Settings(BaseSettings):
 def load_settings() -> Settings:
     try:
         import streamlit as st
-        st_secrets = {k: v for k, v in st.secrets.items() if k in Settings.model_fields}
+        # Strip whitespace from keys to prevent 401 errors from hidden characters
+        st_secrets = {k: v.strip() for k, v in st.secrets.items() if k in Settings.model_fields and isinstance(v, str)}
         settings = Settings(**st_secrets)
+
     except Exception:
         settings = Settings()
 
