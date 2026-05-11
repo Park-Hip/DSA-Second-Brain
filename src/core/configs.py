@@ -14,7 +14,13 @@ class Settings(BaseSettings):
     prompts_yaml: Dict[str, Any] = {}
 
 def load_settings() -> Settings:
-    settings = Settings()
+    try:
+        import streamlit as st
+        st_secrets = {k: v for k, v in st.secrets.items() if k in Settings.model_fields}
+        settings = Settings(**st_secrets)
+    except Exception:
+        settings = Settings()
+
     
     config_path = Path("config/settings.yaml")
     if config_path.exists():
