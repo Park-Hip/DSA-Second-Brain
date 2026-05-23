@@ -87,4 +87,4 @@ The application will be available at `http://localhost:8501`.
 - **Data Handling**: [Pydantic](https://docs.pydantic.dev/)
 
 ## Presentation
-**Slide**: [Canva](https://www.canva.com/design/DAHKB9GTmSE/u5x637qlEu_lFEJCjJpnfg/edit)
+- **Slide**: [Canva](https://www.canva.com/design/DAHKB9GTmSE/u5x637qlEu_lFEJCjJpnfg/edit)
