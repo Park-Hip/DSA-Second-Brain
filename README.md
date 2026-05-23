@@ -48,6 +48,7 @@
    EXA_API_KEY=your_exa_key
    YOUTUBE_API_KEY=your_youtube_key
    ```
+   Note: If you are my teacher you can use the API keys I included in the report.
 
 ### Running the App
 
@@ -84,3 +85,6 @@ The application will be available at `http://localhost:8501`.
 - **LLM**: [Groq](https://groq.com/) 
 - **Search**: [Exa AI](https://exa.ai/)
 - **Data Handling**: [Pydantic](https://docs.pydantic.dev/)
+
+## Presentation
+**Slide**: [Canva](https://www.canva.com/design/DAHKB9GTmSE/u5x637qlEu_lFEJCjJpnfg/edit)
